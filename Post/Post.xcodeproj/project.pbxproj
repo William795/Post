@@ -13,6 +13,9 @@
 		92B823D1228A0083001DFF26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92B823CF228A0083001DFF26 /* LaunchScreen.storyboard */; };
 		92B823DC228A0083001DFF26 /* PostTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B823DB228A0083001DFF26 /* PostTests.swift */; };
 		92B823E7228A0084001DFF26 /* PostUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B823E6228A0084001DFF26 /* PostUITests.swift */; };
+		92B823F6228A036F001DFF26 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B823F5228A036F001DFF26 /* Post.swift */; };
+		92B823F8228A0379001DFF26 /* PostContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B823F7228A0379001DFF26 /* PostContoller.swift */; };
+		92B82405228A216F001DFF26 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B82404228A216F001DFF26 /* PostViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,9 @@
 		92B823E2228A0084001DFF26 /* PostUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PostUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92B823E6228A0084001DFF26 /* PostUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostUITests.swift; sourceTree = "<group>"; };
 		92B823E8228A0084001DFF26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92B823F5228A036F001DFF26 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		92B823F7228A0379001DFF26 /* PostContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostContoller.swift; sourceTree = "<group>"; };
+		92B82404228A216F001DFF26 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,9 @@
 			children = (
 				92B823F4228A008E001DFF26 /* Resources */,
 				92B823CA228A0080001DFF26 /* Main.storyboard */,
+				92B823FB228A0732001DFF26 /* Controllers */,
+				92B823FC228A073C001DFF26 /* Models */,
+				92B82401228A09A5001DFF26 /* Views */,
 			);
 			path = Post;
 			sourceTree = "<group>";
@@ -128,6 +137,46 @@
 				92B823D2228A0083001DFF26 /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		92B823FB228A0732001DFF26 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				92B823FD228A0743001DFF26 /* ViewControllers */,
+				92B823FE228A074A001DFF26 /* ModelControllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		92B823FC228A073C001DFF26 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				92B823F5228A036F001DFF26 /* Post.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		92B823FD228A0743001DFF26 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				92B82404228A216F001DFF26 /* PostViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		92B823FE228A074A001DFF26 /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+				92B823F7228A0379001DFF26 /* PostContoller.swift */,
+			);
+			path = ModelControllers;
+			sourceTree = "<group>";
+		};
+		92B82401228A09A5001DFF26 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,7 +310,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92B82405228A216F001DFF26 /* PostViewController.swift in Sources */,
 				92B823C7228A0080001DFF26 /* AppDelegate.swift in Sources */,
+				92B823F6228A036F001DFF26 /* Post.swift in Sources */,
+				92B823F8228A0379001DFF26 /* PostContoller.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,7 +489,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Post/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Post/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -454,7 +506,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Post/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Post/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
